@@ -1,0 +1,255 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.all-sections{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.15s;
+    font-family: Inter;
+}
+
+ ul a:hover{
+    color: rgb(0, 155, 0);
+}
+
+.navigation-bar-section-1{
+    background-color: #0f1622;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+}
+
+.navigation-bar-section-1-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 65px;
+    margin-top: 26px;
+}
+
+#logo-pic{
+    width: 50px;
+    cursor: pointer;
+}
+
+#logo-word{
+    color: #fff;
+    font-family: Inter;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+li{
+    list-style: none;
+    color: #fff;
+    font-family: Inter;
+    transition: color 0.15s;
+}
+
+li:hover{
+    color: rgb(0, 155, 0);
+}
+
+.navigation-bar-section-1-middle{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: -34px;
+    margin-left: 240px;
+    cursor: pointer;
+}
+
+#search-btn{
+    margin-right: -5px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-right: 5px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: bolder;
+    font-family: Inter;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-style: none;
+    background-color: #31304D;
+    cursor: pointer;
+}
+
+#search-bar{
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 13px;
+    padding-left: 15px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+    background-color: #31304D;
+    outline: none;
+    font-family: Inter;
+    font-size: 14px;
+    color: #fff;
+}
+
+#search-bar::placeholder{
+    font-family: Inter;
+    margin-top: -10px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 200;
+}
+
+#search-input{
+    margin-top: -18px;
+}
+
+.country-menu-cont .sub-menu-list a{
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.sub-menu-list-country{
+    background-color: #0f1622;
+    height: 600px;
+    width: 500px;
+    border-radius: 20px;
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -10px;
+    box-shadow: 2px 2px 10px 1px #31304D;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.sub-menu-list-country a{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    opacity: 0.5;
+    padding-bottom: 15px;
+    font-weight: 100;
+    font-family: Inter;
+    font-size: 14px
+}
+
+.country-cont:hover .sub-menu-list-country{
+    display: block;
+}
+
+.navigation-bar-section-1-right{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: #fff;
+    font-family: Inter;
+    float: right;
+    margin-right: 30px;
+    margin-top: -35px;
+}
+
+.user-icon{
+    margin-right: 15px;
+    background-color: #31304D;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: -8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+}
+
+.user-icon:hover{
+    opacity: 1;
+}
+
+/*Section 2 styles*/
+
+.section-2{
+    background-color: #020916;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    margin-top: 100px;
+    font-family: Inter;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.section-2 h3{
+    font-size: 18px;
+    font-family: Inter;
+    color: #fff;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+#forgot-password{
+    font-size: 15px;
+    font-family: Inter;
+    color: green;
+    font-weight: 600;
+    padding-bottom: 10px;
+    transition: color 0.15s;
+    opacity: 0.6;
+}
+
+#forgot-password:hover{
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#username{
+    width: 1400px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    outline-color: blue;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+#password{
+    width: 1400px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    outline-color: blue;
+    margin-bottom: 35px;
+    margin-top: 10px;
+}
+
+#login-btn{
+    background-color: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none;
+    color: #fff;
+    font-family: Inter;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
